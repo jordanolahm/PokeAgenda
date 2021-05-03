@@ -1,0 +1,72 @@
+.App {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #fafafa;
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #524153 !important;
+  justify-content:space-between;
+}
+
+.container{
+  margin-top: 5rem;
+  height:auto; 
+}
+
+body {
+  background-color: transparent !important;
+}
+.footerText{
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  color: #ffffff;
+}
+
+.Login-Acess {
+  
+    background: #7E7394;
+    color: #fdfdfd;
+    border: none;
+    border-radius:6px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:111px;
+    height:40px; 
+    justify-content: center; 
+    align-items:center;
+    display: flex;
+}
+
+.Login-Acess:hover{
+  opacity: 2;
+  text-decoration: none;
+  background-color: #FFD700;
+  color: black;
+}
+
+
+.input {
+  width: 50vw;
+  height:55px; 
+  border-radius: 5px;
+}
+
+.input:focus {
+    box-shadow: 4px 4px rgba(234, 238, 7, 0.5);
+    outline: none;
+}
+
+footer{
+  background-color: #524153;
+  width: 100%;
+  height: 49px; 
+  margin: auto;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  display: flex; 
+}
