@@ -5,7 +5,6 @@ import classnames from 'classnames';
 import logo from '../../assets/logo.svg'
 import competi from '../../assets/competi.svg'
 import { Link } from 'react-router-dom'
-import {CgSearch } from 'react-icons/cg'
 
 const Branding = styled.a`
   -moz-user-select: none;
@@ -51,14 +50,16 @@ export default class NavBar extends Component {
         >
           <img src={logo} />
         </Branding>
+        <Link className="Login-Acess" to="/slider">
+          Slider
+        </Link>
         <div>
           <input
             className="input"
             type="text"
             placeholder="Search Pokemon"
             onChange={(e) => this.props.setPokeName(e.target.value)}
-          >
-          </input>
+          ></input>
         </div>
         <Link className="Login-Acess" to="/login">
           Login

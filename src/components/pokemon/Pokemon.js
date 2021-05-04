@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
+import { Link } from 'react-router-dom'
+import "../../containers/App.css";
 
 const TYPE_COLORS = {
   bug: 'B1C12E',
@@ -197,20 +199,20 @@ export default class Pokemon extends Component {
               </div>
               <div className="col-7">
                 <div className="float-right">
-                  {this.state.types.map(type => (
+                  {this.state.types.map((type) => (
                     <span
                       key={type}
                       className="badge badge-pill mr-1"
                       style={{
                         backgroundColor: `#${TYPE_COLORS[type]}`,
-                        color: 'white'
+                        color: "white",
                       }}
                     >
                       {type
                         .toLowerCase()
-                        .split(' ')
-                        .map(s => s.charAt(0).toUpperCase() + s.substring(1))
-                        .join(' ')}
+                        .split(" ")
+                        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+                        .join(" ")}
                     </span>
                   ))}
                 </div>
@@ -229,9 +231,9 @@ export default class Pokemon extends Component {
                 <h4 className="mx-auto">
                   {this.state.name
                     .toLowerCase()
-                    .split(' ')
-                    .map(s => s.charAt(0).toUpperCase() + s.substring(1))
-                    .join(' ')}
+                    .split(" ")
+                    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+                    .join(" ")}
                 </h4>
                 <div className="row align-items-center">
                   <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
@@ -244,7 +246,7 @@ export default class Pokemon extends Component {
                         role="progressbar"
                         style={{
                           width: `${this.state.stats.hp}%`,
-                          backgroundColor: `#${this.state.themeColor}`
+                          backgroundColor: `#${this.state.themeColor}`,
                         }}
                         aria-valuenow="25"
                         aria-valuemin="0"
@@ -266,7 +268,7 @@ export default class Pokemon extends Component {
                         role="progressbar"
                         style={{
                           width: `${this.state.stats.attack}%`,
-                          backgroundColor: `#${this.state.themeColor}`
+                          backgroundColor: `#${this.state.themeColor}`,
                         }}
                         aria-valuenow="25"
                         aria-valuemin="0"
@@ -288,7 +290,7 @@ export default class Pokemon extends Component {
                         role="progressbar"
                         style={{
                           width: `${this.state.stats.defense}%`,
-                          backgroundColor: `#${this.state.themeColor}`
+                          backgroundColor: `#${this.state.themeColor}`,
                         }}
                         aria-valuenow="25"
                         aria-valuemin="0"
@@ -310,7 +312,7 @@ export default class Pokemon extends Component {
                         role="progressbar"
                         style={{
                           width: `${this.state.stats.speed}%`,
-                          backgroundColor: `#${this.state.themeColor}`
+                          backgroundColor: `#${this.state.themeColor}`,
                         }}
                         aria-valuenow="25"
                         aria-valuemin="0"
@@ -332,7 +334,7 @@ export default class Pokemon extends Component {
                         role="progressbar"
                         style={{
                           width: `${this.state.stats.specialAttack}%`,
-                          backgroundColor: `#${this.state.themeColor}`
+                          backgroundColor: `#${this.state.themeColor}`,
                         }}
                         aria-valuenow={this.state.stats.specialAttack}
                         aria-valuemin="0"
@@ -354,7 +356,7 @@ export default class Pokemon extends Component {
                         role="progressbar"
                         style={{
                           width: `${this.state.stats.specialDefense}%`,
-                          backgroundColor: `#${this.state.themeColor}`
+                          backgroundColor: `#${this.state.themeColor}`,
                         }}
                         aria-valuenow={this.state.stats.specialDefense}
                         aria-valuemin="0"
@@ -407,7 +409,7 @@ export default class Pokemon extends Component {
                         role="progressbar"
                         style={{
                           width: `${this.state.genderRatioFemale}%`,
-                          backgroundColor: '#c2185b'
+                          backgroundColor: "#c2185b",
                         }}
                         aria-valuenow="15"
                         aria-valuemin="0"
@@ -420,7 +422,7 @@ export default class Pokemon extends Component {
                         role="progressbar"
                         style={{
                           width: `${this.state.genderRatioMale}%`,
-                          backgroundColor: '#1976d2'
+                          backgroundColor: "#1976d2",
                         }}
                         aria-valuenow="30"
                         aria-valuemin="0"
@@ -462,11 +464,23 @@ export default class Pokemon extends Component {
               </div>
             </div>
           </div>
-          <div class="card-footer text-muted">
-            Data From{' '}
-            <a href="https://pokeapi.co/" target="_blank" className="card-link">
-              PokeAPI.co
-            </a>
+          <div
+            class="card-footer text-muted"
+            style={{ display: "flex", justifyContent: "space-between", alignItems: "center"}}
+          >
+            <div>
+              Data From {" "}
+              <a
+                href="https://pokeapi.co/"
+                target="_blank"
+                className="card-link"
+              >
+                PokeAPI.co
+              </a>
+            </div>
+            <Link className="Login-Acess" to="/">
+              Retornar
+            </Link>
           </div>
         </div>
       </div>

@@ -71,7 +71,7 @@ export default class PokemonCard extends Component {
               />
             ) : null}
             <Sprite
-              className="card-img-top rounded mx-auto mt-2"
+              className=" rounded mx-auto mt-2"
               src={this.state.imageUrl}
               onLoad={() => this.setState({ imageLoading: false })}
               onError={() => this.setState({ toManyRequests: true })}
