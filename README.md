@@ -48,6 +48,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Install these libraries used in the project
 
+React install after clone project, add Node_modules in source.  
+`yarn install`
+
 React Bootstrap
 `npm install react-bootstrap bootstrap`
 
