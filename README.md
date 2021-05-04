@@ -42,3 +42,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Other Library
+
+Install these libraries used in the project
+
+React Bootstrap
+`npm install react-bootstrap bootstrap`
+
+React Axios
+`yarn add axios`
+
+React Form 
+`$ yarn add formik yup`
+
+Library for example apply routes, navegations and cancel default CSS in Page. 
+`npm i axios react-router react-router-dom history normalize.css`
+
+
